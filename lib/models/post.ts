@@ -1,6 +1,6 @@
 import { model, models, Schema, Document, Types } from "mongoose";
 
-interface Post {
+export interface Post {
   title: string;
   content: string;
   author?: Types.ObjectId; // Optional reference to the User model

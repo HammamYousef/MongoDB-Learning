@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -16,6 +17,12 @@ function Hero() {
       <p className="text-lg text-white opacity-90">
         Explore user management with Next.js & MongoDB!
       </p>
+      <Link
+        href="/posts"
+        className="mt-4 inline-block bg-white text-green-600 hover:bg-gray-100 px-6 py-3 rounded-full font-semibold shadow"
+      >
+        View Posts
+      </Link>
     </section>
   );
 }

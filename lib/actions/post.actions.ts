@@ -25,7 +25,7 @@ export async function createPost(
 export async function getAllPosts() {
   try {
     await connectToDatabase();
-    const posts = await PostModel.find({}).populate("author", "name email");
+    const posts = await PostModel.find({}).populate("author");
     return posts;
   } catch (error) {
     console.error("Error fetching posts:", error);
