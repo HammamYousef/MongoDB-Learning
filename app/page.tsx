@@ -16,6 +16,12 @@ export default function Home() {
       <div key={refresh}>
         <UsersContainer />
       </div>
+      <footer>
+        <div className="text-center text-gray-500 mt-8">
+          &copy; {new Date().getFullYear()} My MongoDB Project. All rights
+          reserved.
+        </div>
+      </footer>
     </div>
   );
 }
